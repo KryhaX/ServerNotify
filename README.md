@@ -12,7 +12,6 @@ ServerNotify is a web-based tool designed to allow users to send preset messages
 ## Installation
 
 ### Step 1: Clone the Repository
-
 Clone this repository to your local machine:
 
 ```bash
