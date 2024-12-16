@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin: 20px 0 10px 0;
+}
+
+.preset-container {
+    margin-bottom: 20px;
+}
+
+.preset-label {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.preset-select {
+    font-size: 1em;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.container {
+    display: grid;
+    gap: 30px;
+    padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+
+.server-box {
+    border: 3px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 250px;
+}
+
+.server-header {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    text-align: left;
+    padding: 8px 10px;
+    margin-bottom: 10px;
+}
+
+.server-message {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.server-message textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 1em;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    overflow: hidden;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+.server-message textarea:focus {
+    outline: none;
+    border-color: #555;
+}
+
+.container[data-servers="2"] {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.container[data-servers="3"] {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container[data-servers="6"] {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.container[data-servers="12"] {
+    grid-template-columns: repeat(4, 1fr);
+}
